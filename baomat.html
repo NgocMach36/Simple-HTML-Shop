@@ -1,0 +1,333 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/teampchinh.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Templace</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" type="text/css" href="CSS/baomat.css">
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="CSS/trangchu.css">
+<script>
+function kiemtra()
+{
+	var login=document.getElementById("tendangnhap");
+	if(login.value=='')
+	{
+		alert("Mời bạn nhập Tên đăng nhập");
+		return true;
+	}
+	var login1=document.getElementById("password");
+	if(login1.value=='')
+	{
+		alert("Mời bạn nhập Mật khẩu");
+		return true;
+	}
+	document.getElementById("thongbao").innerHTML="Đăng nhập thành công.";
+	return false;
+		
+}
+function kiemtra1()
+{
+	var login2=document.getElementById("tendangnhap1");
+	if(login2.value=='')
+	{
+		alert("Mời bạn nhập Tên đăng nhập");
+		return true;
+	}
+	var login3=document.getElementById("password1");
+	if(login3.value=='')
+	{
+		alert("Mời bạn nhập Mật khẩu");
+		return true;
+	}
+	var login4=document.getElementById("repassword");
+	if(login4.value=='')
+	{
+		alert("Mời bạn Nhập lại Mật khẩu");
+		return true;
+	}
+	document.getElementById("thongbao1").innerHTML="Đăng ký thành công.";
+	return false;
+		
+}
+</script>
+</head>
+<body>
+<div class="body">
+        <header >
+            <div id="header">
+            <div id="fb">
+            
+            </div>
+            <div id="logo">
+            <img src="Images/logo1.jpg" style="width:330px">
+            </div>
+            <div id="dangnhap">
+            <div class="con">
+            <button id="myBtn"><img src="Images/login.png" style="width:70px" height:"70px"></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <form action="#">
+                        <span class="close">&times;</span>
+                        <h2>ĐĂNG NHẬP</h2>
+                        <h3 id="thongbao" style="color: #000; text-align:center;"></h3>
+                        <div class="fomrgroup">
+                            <p>Tên đăng nhập:</p>
+                            <input type="text" name="username" id="tendangnhap">
+                        </div>
+                        <div class="fomrgroup">
+                            <p>Mật khẩu:</p>
+                            <input type="password" name="passWord" id="password">
+                        </div>
+                        <div class="fomrgroup">
+                        <div id="thedangnhap">
+                            <button onClick="return kiemtra();">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <script>
+            // lấy phần Modal
+            var modal = document.getElementById('myModal');
+         
+            // Lấy phần button mở Modal
+            var btn = document.getElementById("myBtn");
+         
+            // Lấy phần span đóng Modal
+            var span = document.getElementsByClassName("close")[0];
+         
+            // Khi button được click thi mở Modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+         
+            // Khi span được click thì đóng Modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+         
+            // Khi click ngoài Modal thì đóng Modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+            </div>
+            <div id="dangky">
+            <div class="con">
+            <button id="myBtn2"><img src="Images/signup.png" style="width:70px" height:"70px"></button>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <form action="#">
+                        <span class="close2">&times;</span>
+                        <h2>ĐĂNG KÝ</h2>
+                        <h3 id="thongbao1" style="color: #000; text-align:center;"></h3>
+                        <div class="fomrgroup">
+                            <p>Tên đăng nhập:</p>
+                            <input type="text" name="username" id="tendangnhap1">
+                        </div>
+                        <div class="fomrgroup">
+                            <p>Mật khẩu:</p>
+                            <input type="password" name="passWord" id="password1">
+                        </div>
+                        <div class="fomrgroup">
+                            <p>Nhập lại mật khẩu:</p>
+                            <input type="password" name="repassWord" id="repassword">
+                        </div>
+                        <div class="fomrgroup">
+                        <div id="thedangnhap">
+                            <button onClick="return kiemtra1();">Đăng ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <script>
+            // lấy phần Modal
+            var modal2 = document.getElementById('myModal2');
+         
+            // Lấy phần button mở Modal
+            var btn2 = document.getElementById("myBtn2");
+         
+            // Lấy phần span đóng Modal
+            var span2 = document.getElementsByClassName("close2")[0];
+         
+            // Khi button được click thi mở Modal
+            btn2.onclick = function() {
+                modal2.style.display = "block";
+            }
+         
+            // Khi span được click thì đ
+            span2.onclick = function() {
+                modal2.style.display = "none";
+            }
+         
+            // Khi click ngoài Modal thì đóng Modal
+            window.onclick = function(event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+        </script>
+            </div>
+        <div id="giohang">
+        <img src="Images/icongiohang.png" style="width:70px" height:"70px">
+        </div>
+		</header>
+        <nav>
+        <div id="subnav">
+        <ul>
+        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="trangchu.html">Trang Chủ</a></li>
+        <li><a href="sanphammoi.html">Kênh Phân Phối</a>
+        <ul class="submenu">
+        <li><a href="3ce.html">3CE</a>
+        <li><a href="blackrouge.html">Black Rouge</a>
+        <li><a href="guerlain.html">Guerlain</a>
+        </ul>
+        </li>
+        <li><a href="sanphamhot.html">Sản Phẩm HOT</a>
+        <ul class="submenu">
+        <li><a href="2019.html">Năm 2019</a>
+        <li><a href="2020.html">Năm 2020</a>
+        <li><a href="2021.html">Năm 2021</a>
+        </ul>
+        </li>
+        <li><a href="banggia.html">Bảng Giá Các Dịch Vụ Khác</a>
+        <ul class="submenu">
+        <li><a href="dichvutrangdiem.html">Dịch Vụ Trang Điểm</a>
+        <li><a href="khoahoctrangdiemcoban.html">Trang Điểm Cơ Bản</a>
+        <li><a href="khoahoctrangdiemnangcao.html">Trang Điểm Nâng Cao</a>
+        </ul>
+        </li>
+        <li><a href="lienhe.html">Liên Hệ</a>
+        <ul class="submenu">
+        <li><a href="https://www.facebook.com/3cevietnam.com.vn">Facebook</a>
+        <li><a href="https://twitter.com/3ceVietnam">Twitter</a>
+        <li><a href="https://www.instagram.com/3cevietnam/">Instagram</a>
+        <li><a href="https://www.youtube.com/3CEVietNam">YouTube</a>
+        </ul>
+        </li>
+        <li class="search">
+        <img src="Images/icon.png" style="width:45px" height:"45px">
+        <div class="search-bar">
+        <form>
+          <input type="text" name="search" placeholder="Tìm kiếm...">
+        </form>
+      </div>
+    </li>
+  </ul>
+  </div>
+</nav>
+<div id="than">
+<article>
+<aside>
+<!-- InstanceBeginEditable name="nội dung" -->
+<div id="baomat">
+<div id="tieude">
+CHÍNH SÁCH BẢO MẬT
+</div>
+<p> Mục đích thu thập thông tin khách hàng</p>
+<ul>
+<li>Hỗ trợ khách hàng khi mua sản phẩm</li>
+<li>Tư vấn, hỗ trợ giải đáp thắc mắc theo yêu cầu khách hàng.</li>
+<li>Cung cấp cho khách hàng thông tin về sản phẩm mới nhất của Công ty.</li>
+<li>Xem xét và nâng cấp nội dung và giao diện của Website bán hàng</li>
+<li>Thực hiện các bản khảo sát khách hàng. Đo lường và cải thiện các dịch vụ của Công ty</li>
+<li>Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm và dịch vụ của Công ty.</li>
+</ul>
+<p>Cam kết bảo mật thông tin khách hàng</p>
+<ul>
+<li>Khi khách hàng gửi thông tin cá nhân của khách hàng cho Công ty chúng tôi, khách hàng đã đồng ý với các điều khoản mà chúng tôi đã nêu ở trên.</li>
+<li>Chúng tôi cam kết rằng những thông tin mà khách hàng đã cung cấp cho chúng tôi sẽ được bảo mật và được sử dụng để đem lại lợi ích tối đa cho khách hàng.</li>
+<li>Trong khuôn khổ chính sách bảo mật, chúng tôi cam kết không bán hay tiết lộ dữ liệu cá nhân của bạn cho bên thứ ba mà không được đồng ý trước trừ khi điều này là cần thiết cho các điều khoản trong chính sách bảo mật hoặc chúng tôi được yêu cầu phải làm như vậy theo quy định của pháp luật.</li>
+<li>Trong những trường hợp còn lại, chúng tôi sẽ có thông báo cụ thể cho Quý Khách Hàng khi phải tiết lộ thông tin cho một bên thứ ba và thông tin này chỉ được cung cấp khi được sự phản hồi đồng ‎ý‎ từ phía Quý Khách Hàng.</li>
+</ul>
+</div>
+<!-- InstanceEndEditable -->
+
+
+</aside>
+<section>
+<div>
+<div id="sonmoi">
+<p>
+SON MỚI
+<p>
+</div>
+<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()" max-height="450px">
+<P><a href="chitietsanpham1.html"> <img src="Images/15.jpg">3CE Stylenanda Velvet Lip Tint </a></P>
+<P><a href="16"> <img src="Images/16.jpg">NARS Audacious Liptstick Rouge À Lèvres</a></P>
+<P><a href="17"> <img src="Images/17.jpg">3CE Stylenanda Velvet Lip Tint</a></P>
+<P><a href="18"> <img src="Images/18.jpg">Lilybyred</a></P>
+<P><a href="19"> <img src="Images/19.jpg">INK Airy Velvet 02</a></P>
+<P><a href="20"> <img src="Images/20.jpg">INK Passion Apple </a></P>
+<P><a href="21"> <img src="Images/21.jpg">INK Airy Velvet 10</a></P>
+</marquee>
+</div>
+</section>
+</article>
+</div>
+<footer>
+<div class="container">
+         <div class="miko">
+             <h2>MIKO</h2>
+             <span style="color: #A4A4A4;"> Chủ sở hữu: Mạch Thị Thanh Ngọc</span> <br>
+             <span style="color: #A4A4A4;"> Mã số thuế: 123456789 Ngày cấp: 01/01/1111 Nơi cấp: Chi cục thuế tỉnh Đồng Nai</span> <br>
+             <span style="color: #A4A4A4;"> Địa chỉ: Ấp 5, xã Thạnh Phú, huyện Vĩnh Cửu, tỉnh Đồng Nai</span><br>
+             <span style="color: #A4A4A4;"> SĐT: 0333 333 373 </span>
+             <h2>LIÊN KẾT</h2>
+             <ul class="social-icon">
+                 <li><a href="https://www.facebook.com/3cevietnam.com.vn"><img class="iconxahoi" src="Images/iconfb.png" style="width:70px" height:"70px"></a></li>
+                 <li><a href="https://twitter.com/3ceVietnam"><img class="iconxahoi" src="Images/icontw.png" style="width:70px" height:"70px"></a></li>
+                 <li><a href="https://www.instagram.com/3cevietnam/"><img class="iconxahoi" src="Images/iconist.png" style="width:70px" height:"70px"></a></li>
+                 <li><a href="https://www.youtube.com/3CEVietNam"><img class="iconxahoi" src="Images/iconyou.png" style="width:70px" height:"70px"></a></li>
+             </ul>
+         </div>
+         <div class="noi-dung links">
+             <h2>CHÍNH SÁCH</h2>
+             <ul>
+                 <li><a href="baomat.html">Bảo mật</a></li>
+                 <li><a href="doitra.html">Đổi trả và hoàn tiền</a></li>
+                 <li><a href="thongtin.html">Thông Tin Liên Lạc</a></li>
+                 <li><a href="vanchuyen.html">Vận chuyển</a></li>
+                 <li><a href="hinhthuc.html">Hình thức thanh toán</a></li>
+                 <li><a href="uudai.html">Ưu đãi cho lần mua đầu</a></li>
+             </ul>
+         </div>
+         <div class="noi-dung contact">
+             <h2>LIÊN HỆ</h2>
+             <ul class="info">
+                 <li>
+                     <span><img class="iconxahoi" src="Images/iconplace.png" style="width:50px" height:"50px"></span>
+                     <span>Hà Nội<br>
+                         Thành Phố Hồ Chí Minh<br>
+                         Đà Nẵng</span>
+                 </li>
+                 <li>
+                     <span><img class="iconxahoi" src="Images/iconphone.png" style="width:50px" height:"50px"></span>
+                     <p><a href="#">0856946599</a>
+
+                 </li>
+                 <li>
+                     <span><img  class="iconxahoi" src="Images/icongmail.png" style="width:50px" height:"50px"></span>
+                     <p><a href="https://mail.google.com/mail/u/0/#inbox">machngoc3600@gmail.com</a></p>
+                </li>
+                 <li>
+                     <form class="form">
+                         <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                         <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                     </form>
+                 </li>
+             </ul>
+         </div>
+     </div>
+</footer>
+</body>
+<!-- InstanceEnd --></html>

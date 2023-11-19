@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	max-width:1200px;
+	height:auto;
+	margin: 0 auto;
+	background-color:#FFF;
+}
+#header{
+	width: 1200px;
+	margin: 0 auto;
+}
+#logo{
+	float: left;
+}
+#dangnhap{
+	float: right;
+	margin: 10px;
+}
+
+#dangky{
+	float: right;
+	margin: 10px;
+}
+
+#subnav{
+ clear:both;
+}	
+
+#subnav ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  background: #000;
+}
+#subnav ul li{
+  height:45px;
+  display: inline-table;
+  position: relative;
+  line-height: 45px;
+  display: inline-block;
+  	
+}
+#subnav ul li a{
+  text-decoration: none;
+  color: #FCF;
+  padding:14px 16px;
+}
+#subnav ul li:hover{
+ transform: scale(1.1);
+
+}
+
+#subnav ul li >.submenu {
+	display: none;
+	position: absolute;
+	padding:0px 10px;
+	
+}
+
+#subnav ul li:hover .submenu{
+	display: block;
+}
+/* kết thúc thanh menu nhỏ*/
+.search{
+  position:relative;
+  display:inline-block;
+  color: #FCF;
+  padding:0px 20px;
+  float:right;
+}
+.search-bar{
+  position:absolute;
+  display:none;
+  right:0;
+  top:45px;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+	background-color:lightpink;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    padding: 12px 14px;
+}
+input[type=password] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+	background-color:lightpink;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    padding: 12px 14px;
+}
+
+.search:hover .search-bar{
+  display:block;
+}
+form input[type="text"]:focus{
+  width:250px;
+  background-color:lightpink;
+}
+form input[type="password"]:focus{
+  width:250px;
+  background-color:lightpink;
+}
+ /* Định dạng cho form đăng nhập nhé*/
+ 
+ .con {
+                width: 70%;
+                margin: auto;
+                text-align: center;
+				margin-top: 50px;
+            }
+            .fomrgroup {
+                width: 50%;
+                margin: auto;
+                display: block;
+                height: 80px;
+            }
+			.fomrgroup>p{
+				 color: #000;
+				
+			 }
+            .fomrgroup input{
+               
+				width: 150px;
+                height: 25px;
+                margin-right: 20px;
+                line-height: 50px;
+				border-radius: 10px;
+            }
+        
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px; 
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%; 
+                overflow: auto;
+				background-color: rgb(0,0,0); 
+                background-color: rgba(0,0,0,0.4); 
+               
+            }
+             
+            
+            .modal-content {
+                background-color: #FFF;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 500px;
+				border-radius: 15px;
+            }
+           
+            
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+             
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }  
+			#myBtn{
+				border: none;
+				background-color:#FFF;
+			}
+			#myBtn2{
+				border: none;
+				background-color:#FFF;
+			}
+			.close2 {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+             
+            .close2:hover,
+            .close2:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+ 
+ /* Hết phần định dạng form đăng nhập*/
+#giohang{
+	float: right;
+	margin: 60px 10px 0px 0px ;
+}
+
+div#than{
+ width:1200px;
+ margin:0px auto;
+ background-color: #FDF1FE;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px
+0 rgba(0, 0, 0, 0.19);
+height: auto;
+
+}
+aside, section{
+ display:table-cell;
+ vertical-align:top;
+}
+aside{
+ width:800px;
+ 
+}
+section{
+ width:350px;
+
+
+}
+
+
+/* Phần vào xem */
+		 
+
+section>div{
+ border:3px solid #000;
+ border-radius:4px;
+ margin-top: 45px;
+ margin-bottom:20px;
+ margin-left:80px;
+ width: 300px;
+}
+ #sonmoi{
+	text-align: center;
+	 background-color:#000;
+ border-top-left-radius:2px;
+ border-top-right-radius:2px;
+ font-size:16px;
+ font-weight:bold;
+ color: #FCF;
+ height:40px;
+ line-height: 40px;	
+ 
+}
+
+section>div p{
+ clear:both;
+}
+
+section>div img{
+ width:60px;
+ height:60px;
+ padding-left:5px;
+ float:left;
+ margin-bottom:20px;
+}
+section>div  a{
+ text-decoration:none;
+ font-size:15pt;
+ font-family:Arial;
+ color: #000;
+ height:50px;
+}
+section>div a:hover{
+ font-weight:bold;
+}
+
+
+
+
+footer{
+     width: 1000px;
+     height: auto;
+     padding: 10px 100px;
+     background: #111;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+footer .container{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+ 
+ footer .container .miko{
+     margin-right: 20px;
+ }
+footer  .container .miko{
+     width:35%;
+ }
+ footer .container .miko h2{
+     color:#FCF;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+
+footer .container .miko p{
+     color: #999;
+ }
+
+
+ .social-icon{
+     margin-top: 20px;
+     display: flex;
+ }
+.social-icon li {
+     list-style: none;
+ }
+ .social-icon li a{
+     display: inline-block;
+     width: 70px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+     border-radius: 4px;
+ }
+
+.iconxahoi:hover{
+ transform: scale(1.1);
+}
+ 
+
+ 
+.links h2{
+     position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+ .links h2{
+     position: relative;
+     color:#FCF;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+
+.links{
+    position: relative;
+    width: 25%;
+ }
+ .links ul li{
+     list-style: none;
+ }
+ .links ul li a{
+     color: #999;
+     margin-bottom: 10px;
+     display: inline-block;
+ }
+.links ul li a:hover{
+     color:#FCF;
+ }
+ 
+ 
+ 
+ 
+ 
+ .contact h2{
+     position: relative;
+     color:#FCF;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+.contact h2::before{
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+
+ }
+
+.contact .info{
+     position: relative;
+ }
+ .contact .info li{
+     display: flex;
+     margin-bottom: 16px;
+ }
+ .contact .info li span:nth-child(1) {
+     color: #fff;
+     font-size: 20px;
+     margin-right: 10px;
+ }
+.contact .info li span{
+     color: #999;
+ }
+.contact .info li a{
+     color: #999;
+ }
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 

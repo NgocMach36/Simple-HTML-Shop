@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+.ngoai {
+  height: 800px;
+  width: 654px;
+  margin: 50px 0 0 30px;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.product-img {
+  float: left;
+}
+
+.product-info {
+  float: left;
+  height: 350px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+}
+
+.product-text {
+  height: 200px;
+  width: 300px;
+}
+
+.product-text h1 {
+	width:400px;
+  margin: 0 0 0 100px;
+  padding-top: 40px;
+  font-size: 34px;
+  color: #474747;
+}
+
+
+.product-text h2 {
+	width:400px;
+	text-align:center;
+  margin: 15px 0 10px 38px;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.product-text p {
+	width: 400px;
+  margin: 0 0 0 40px;
+  font-size: 15px;
+  font-weight: lighter;
+
+}
+.nut{
+	width:1000px;
+}
+.product-price-btn {
+  width: 327px;
+}
+
+.product-price-btn p {
+  height: 50px;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+
+.product-price-btn button {
+  height: 50px;
+  width: 150px;
+  margin: 0 0 0 80px;
+  border-radius: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color:#FCF;
+  background-color:#000;
+  cursor: pointer;
+}
+
+.product-price-btn button:hover {
+  background-color:#FCF;
+  color: #000;
+}
+.product-text2 p {
+  height: 110px;
+  width: 800px;
+  margin: 0 0 0 0px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.ngoaii{
+	width: 1000px;
+}

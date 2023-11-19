@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+#bordergioithieu{
+	border: #000 thick inset;
+	margin-top: 45px;
+	margin-left: 40px;
+	font-size: 18px;
+}
+
+p{
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+#sumenh{
+	line-height: 1.5;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#dong2{
+	line-height: 1.5;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+ol{
+	line-height: 1.5;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+	

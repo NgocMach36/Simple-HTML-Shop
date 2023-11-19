@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slider {
+	margin-top: 50px;
+	margin-left: 40px;
+  color: white;
+  width: 750px;
+  height: 410px;
+  display: flex;
+  overflow-x: auto;
+}
+#tieude{
+	text-align:center;
+	font-weight:bold;
+	font-size:26px;
+	margin-top:40px;
+}
+           .lienket{       
+            background-color: #000;
+			margin-top: 70px;
+            color: #FCF;
+            border: 2px solid #FCF;
+            border-radius:5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: "Lucida Sans Unicode";
+			margin-left: 350px;
+        }
+        .lienket:hover{
+            background-color: #FCF;
+            color:#000;
+        }
+        .lienket:active{
+            background-color: #FCF;
+            border-color: #FCF;
+        }
